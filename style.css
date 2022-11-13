@@ -1,0 +1,23 @@
+div {
+  height: 250px;
+  width: 250px;
+  border: 1px solid black;
+  padding: 15px;
+}
+div > p::first-letter {
+  font-size: 5em;
+  font-weight: bold;
+  color: red;
+}
+div > p + p::first-letter {
+  font-size: 1em;
+  color: blue;
+}
+div > p + p::first-line {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: blue;
+}
+p {
+  display: block;
+}
